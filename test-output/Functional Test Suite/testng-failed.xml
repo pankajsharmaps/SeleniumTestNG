@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Functional Test(failed)">
+    <classes>
+      <class name="testCase.KayakTestingDataDriven">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="kayakTest" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- testCase.KayakTestingDataDriven -->
+    </classes>
+  </test> <!-- Functional Test(failed) -->
+</suite> <!-- Failed suite [Functional Test Suite] -->
