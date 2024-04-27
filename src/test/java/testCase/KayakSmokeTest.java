@@ -7,7 +7,7 @@ public class KayakSmokeTest {
 	@Test
 	public void loginCheckTest() {
 		
-		System.out.println("Some test");
+		System.out.println("Some testing of Kayak search app");
 	}
 
 }
