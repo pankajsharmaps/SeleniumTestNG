@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.KayakTestingDataDriven">
+      <class name="smokeTests.SmokeTest_EaseMyTrip">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="kayakTest" invocation-numbers="0 1 2"/>
+          <include name="loginCheckTestEMT"/>
         </methods>
-      </class> <!-- testCase.KayakTestingDataDriven -->
+      </class> <!-- smokeTests.SmokeTest_EaseMyTrip -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,35 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
+      <![CDATA[Trivago]]>
     </line>
     <line>
-      <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
+      <![CDATA[Page title is trivago.in - Compare hotel prices worldwide]]>
     </line>
     <line>
-      <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
+      <![CDATA[MMT]]>
     </line>
     <line>
-      <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
+      <![CDATA[Page title is MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday]]>
     </line>
     <line>
-      <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
+      <![CDATA[KAYAK]]>
     </line>
     <line>
-      <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
+      <![CDATA[Page title is Search Flights, Hotels & Rental Cars | KAYAK]]>
+    </line>
+    <line>
+      <![CDATA[EMT]]>
+    </line>
+    <line>
+      <![CDATA[Page title is Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-04-27T11:05:45 IST" name="Functional Test Suite" finished-at="2024-04-27T11:06:39 IST" duration-ms="53572">
+  <suite started-at="2024-05-04T07:38:46 IST" name="Default suite" finished-at="2024-05-04T07:43:16 IST" duration-ms="270738">
     <groups>
+      <group name="Dom">
+        <method signature="SmokeTest_EaseMyTrip.loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@a514af7]" name="loginCheckTestEMT" class="smokeTests.SmokeTest_EaseMyTrip"/>
+        <method signature="SmokeTest_MMT.loginCheckTestMMT()[pri:0, instance:smokeTests.SmokeTest_MMT@6aba2b86]" name="loginCheckTestMMT" class="smokeTests.SmokeTest_MMT"/>
+      </group> <!-- Dom -->
+      <group name="Int">
+        <method signature="SmokeTest_Kayak.loginCheckTestKayak()[pri:0, instance:smokeTests.SmokeTest_Kayak@4466af20]" name="loginCheckTestKayak" class="smokeTests.SmokeTest_Kayak"/>
+        <method signature="SmokeTest_Trivago.loginCheckTestTrivago()[pri:0, instance:smokeTests.SmokeTest_Trivago@71809907]" name="loginCheckTestTrivago" class="smokeTests.SmokeTest_Trivago"/>
+      </group> <!-- Int -->
     </groups>
-    <test started-at="2024-04-27T11:05:45 IST" name="Functional Test" finished-at="2024-04-27T11:06:39 IST" duration-ms="53572">
-      <class name="testCase.KayakTestingDataDriven">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@49c386c8]" started-at="2024-04-27T11:05:48 IST" name="setUp" finished-at="2024-04-27T11:06:02 IST" duration-ms="13670" status="PASS">
+    <test started-at="2024-05-04T07:38:46 IST" name="Default test" finished-at="2024-05-04T07:43:16 IST" duration-ms="270738">
+      <class name="smokeTests.SmokeTest_Trivago">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_Trivago@71809907]" started-at="2024-05-04T07:38:46 IST" name="setUp" finished-at="2024-05-04T07:38:57 IST" duration-ms="11562" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="kayakTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@49c386c8]" started-at="2024-04-27T11:06:02 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-04-27T11:06:08 IST" duration-ms="6877" status="FAIL">
+        <test-method signature="loginCheckTestTrivago()[pri:0, instance:smokeTests.SmokeTest_Trivago@71809907]" started-at="2024-05-04T07:38:57 IST" name="loginCheckTestTrivago" finished-at="2024-05-04T07:39:03 IST" duration-ms="5685" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Trivago]]>
+            </line>
+            <line>
+              <![CDATA[Page title is trivago.in - Compare hotel prices worldwide]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginCheckTestTrivago -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_Trivago@71809907]" started-at="2024-05-04T07:39:03 IST" name="tearDown" finished-at="2024-05-04T07:39:04 IST" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- smokeTests.SmokeTest_Trivago -->
+      <class name="testCase.KayakTestingDataDriven">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@359f7cdf]" started-at="2024-05-04T07:41:48 IST" name="setUp" finished-at="2024-05-04T07:41:56 IST" duration-ms="8458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="kayakTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@359f7cdf]" started-at="2024-05-04T07:41:56 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-05-04T07:42:10 IST" duration-ms="13679" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,89 +81,18 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //*[@class='sR_k-value']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [36c8527c-a80b-4723-ab8f-c7639579bb77, findElement {value=//*[@class='sR_k-value'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:16057, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 3215, moz:profile: /var/folders/tv/ys9fvp5575v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:16057/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 36c8527c-a80b-4723-ab8f-c7639579bb77]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class='sR_k-value']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [36c8527c-a80b-4723-ab8f-c7639579bb77, findElement {value=//*[@class='sR_k-value'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:16057, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 3215, moz:profile: /var/folders/tv/ys9fvp5575v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:16057/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 36c8527c-a80b-4723-ab8f-c7639579bb77
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at pages.KayakHomePage.fromDate(KayakHomePage.java:37)
-at testCase.KayakTestingDataDriven.kayakTest(KayakTestingDataDriven.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-            <line>
-              <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
-            </line>
-            <line>
-              <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
-            </line>
           </reporter-output>
         </test-method> <!-- kayakTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@49c386c8]" started-at="2024-04-27T11:06:08 IST" name="tearDown" finished-at="2024-04-27T11:06:11 IST" duration-ms="2371" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@359f7cdf]" started-at="2024-05-04T07:42:10 IST" name="tearDown" finished-at="2024-05-04T07:42:11 IST" duration-ms="1010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@49c386c8]" started-at="2024-04-27T11:06:11 IST" name="setUp" finished-at="2024-04-27T11:06:18 IST" duration-ms="7265" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@359f7cdf]" started-at="2024-05-04T07:42:11 IST" name="setUp" finished-at="2024-05-04T07:42:18 IST" duration-ms="7552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="kayakTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@49c386c8]" started-at="2024-04-27T11:06:18 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-04-27T11:06:24 IST" duration-ms="5669" status="FAIL">
+        <test-method signature="kayakTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@359f7cdf]" started-at="2024-05-04T07:42:18 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-05-04T07:42:26 IST" duration-ms="7767" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,89 +110,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //*[@class='sR_k-value']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [97613ab6-260f-467c-8555-eb6b2465ad17, findElement {value=//*[@class='sR_k-value'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:48434, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 3242, moz:profile: /var/folders/tv/ys9fvp5575v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:48434/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 97613ab6-260f-467c-8555-eb6b2465ad17]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class='sR_k-value']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [97613ab6-260f-467c-8555-eb6b2465ad17, findElement {value=//*[@class='sR_k-value'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:48434, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 3242, moz:profile: /var/folders/tv/ys9fvp5575v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:48434/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 97613ab6-260f-467c-8555-eb6b2465ad17
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at pages.KayakHomePage.fromDate(KayakHomePage.java:37)
-at testCase.KayakTestingDataDriven.kayakTest(KayakTestingDataDriven.java:28)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-            <line>
-              <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
-            </line>
-            <line>
-              <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
-            </line>
           </reporter-output>
         </test-method> <!-- kayakTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@49c386c8]" started-at="2024-04-27T11:06:24 IST" name="tearDown" finished-at="2024-04-27T11:06:26 IST" duration-ms="1770" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@359f7cdf]" started-at="2024-05-04T07:42:26 IST" name="tearDown" finished-at="2024-05-04T07:42:27 IST" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@49c386c8]" started-at="2024-04-27T11:06:26 IST" name="setUp" finished-at="2024-04-27T11:06:32 IST" duration-ms="6775" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@359f7cdf]" started-at="2024-05-04T07:42:27 IST" name="setUp" finished-at="2024-05-04T07:42:32 IST" duration-ms="5377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="kayakTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@49c386c8]" started-at="2024-04-27T11:06:32 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-04-27T11:06:37 IST" duration-ms="5029" status="FAIL">
+        <test-method signature="kayakTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@359f7cdf]" started-at="2024-05-04T07:42:32 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-05-04T07:42:40 IST" duration-ms="8048" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -247,42 +139,116 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kayakTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@359f7cdf]" started-at="2024-05-04T07:42:40 IST" name="tearDown" finished-at="2024-05-04T07:42:41 IST" duration-ms="441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCase.KayakTestingDataDriven -->
+      <class name="smokeTests.SmokeTest_MMT">
+        <test-method signature="loginCheckTestMMT()[pri:0, instance:smokeTests.SmokeTest_MMT@6aba2b86]" started-at="2024-05-04T07:41:16 IST" name="loginCheckTestMMT" finished-at="2024-05-04T07:41:43 IST" duration-ms="27245" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[MMT]]>
+            </line>
+            <line>
+              <![CDATA[Page title is MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginCheckTestMMT -->
+      </class> <!-- smokeTests.SmokeTest_MMT -->
+      <class name="base.BaseTestParallel">
+        <test-method signature="ChromeTest()[pri:0, instance:base.BaseTestParallel@3ce1e309]" started-at="2024-05-04T07:39:04 IST" name="ChromeTest" finished-at="2024-05-04T07:40:55 IST" duration-ms="111243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChromeTest -->
+        <test-method signature="FirefoxTest()[pri:0, instance:base.BaseTestParallel@3ce1e309]" started-at="2024-05-04T07:40:55 IST" name="FirefoxTest" finished-at="2024-05-04T07:41:16 IST" duration-ms="20920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirefoxTest -->
+      </class> <!-- base.BaseTestParallel -->
+      <class name="smokeTests.SmokeTest_Kayak">
+        <test-method signature="loginCheckTestKayak()[pri:0, instance:smokeTests.SmokeTest_Kayak@4466af20]" started-at="2024-05-04T07:42:41 IST" name="loginCheckTestKayak" finished-at="2024-05-04T07:43:03 IST" duration-ms="22564" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[KAYAK]]>
+            </line>
+            <line>
+              <![CDATA[Page title is Search Flights, Hotels & Rental Cars | KAYAK]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginCheckTestKayak -->
+      </class> <!-- smokeTests.SmokeTest_Kayak -->
+      <class name="testCase.AnnotationDemo_TestNG">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:38:46 IST" name="beforeSuite" finished-at="2024-05-04T07:38:46 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:38:46 IST" name="beforeTest" finished-at="2024-05-04T07:38:46 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:41:43 IST" name="beforeClass" finished-at="2024-05-04T07:41:43 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:41:43 IST" name="beforeMethod" finished-at="2024-05-04T07:41:43 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="tCase1()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:41:43 IST" name="tCase1" finished-at="2024-05-04T07:41:44 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tCase1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:41:44 IST" name="afterMethod" finished-at="2024-05-04T07:41:44 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:41:44 IST" name="beforeMethod" finished-at="2024-05-04T07:41:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testCase1()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:41:44 IST" name="testCase1" finished-at="2024-05-04T07:41:44 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:41:44 IST" name="afterMethod" finished-at="2024-05-04T07:41:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:41:44 IST" name="afterClass" finished-at="2024-05-04T07:41:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:43:16 IST" name="afterTest" finished-at="2024-05-04T07:43:16 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCase.AnnotationDemo_TestNG@5ffead27]" started-at="2024-05-04T07:43:17 IST" name="afterSuite" finished-at="2024-05-04T07:43:17 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testCase.AnnotationDemo_TestNG -->
+      <class name="smokeTests.SmokeTest_EaseMyTrip">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@a514af7]" started-at="2024-05-04T07:43:03 IST" name="setUp" finished-at="2024-05-04T07:43:08 IST" duration-ms="4717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@a514af7]" started-at="2024-05-04T07:43:08 IST" name="loginCheckTestEMT" finished-at="2024-05-04T07:43:16 IST" duration-ms="7973" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Unable to locate element: //*[@class='sR_k-value']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f8aac502-0ade-4ee7-8986-bda090c53325, findElement {value=//*[@class='sR_k-value'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:26643, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 3263, moz:profile: /var/folders/tv/ys9fvp5575v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:26643/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f8aac502-0ade-4ee7-8986-bda090c53325]]>
+              <![CDATA[Title asertion check expected [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com] but found [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com***]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class='sR_k-value']
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f8aac502-0ade-4ee7-8986-bda090c53325, findElement {value=//*[@class='sR_k-value'], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:26643, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 3263, moz:profile: /var/folders/tv/ys9fvp5575v..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:26643/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f8aac502-0ade-4ee7-8986-bda090c53325
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at pages.KayakHomePage.fromDate(KayakHomePage.java:37)
-at testCase.KayakTestingDataDriven.kayakTest(KayakTestingDataDriven.java:28)
+              <![CDATA[java.lang.AssertionError: Title asertion check expected [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com] but found [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com***]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at smokeTests.SmokeTest_EaseMyTrip.loginCheckTestEMT(SmokeTest_EaseMyTrip.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -307,25 +273,25 @@ at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
+              <![CDATA[EMT]]>
             </line>
             <line>
-              <![CDATA[Search Flights, Hotels & Rental Cars | KAYAK]]>
+              <![CDATA[Page title is Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com]]>
             </line>
           </reporter-output>
-        </test-method> <!-- kayakTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@49c386c8]" started-at="2024-04-27T11:06:37 IST" name="tearDown" finished-at="2024-04-27T11:06:39 IST" duration-ms="1680" status="PASS">
+        </test-method> <!-- loginCheckTestEMT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@a514af7]" started-at="2024-05-04T07:43:16 IST" name="tearDown" finished-at="2024-05-04T07:43:16 IST" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCase.KayakTestingDataDriven -->
-    </test> <!-- Functional Test -->
-  </suite> <!-- Functional Test Suite -->
+      </class> <!-- smokeTests.SmokeTest_EaseMyTrip -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

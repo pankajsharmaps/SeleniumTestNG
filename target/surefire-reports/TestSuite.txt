@@ -1,4 +1,25 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 69.574 s - in TestSuite
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 10, Time elapsed: 106.547 s <<< FAILURE! - in TestSuite
+tearDown(smokeTests.SmokeTest_EaseMyTrip)  Time elapsed: 31.362 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17c1c19cca4af90f70b23ce7848503f8, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 17c1c19cca4af90f70b23ce7848503f8
+
+loginCheckTestEMT(smokeTests.SmokeTest_EaseMyTrip)  Time elapsed: 0.029 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+invalid session id
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17c1c19cca4af90f70b23ce7848503f8, get {url=https://www.easemytrip.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 17c1c19cca4af90f70b23ce7848503f8
+	at smokeTests.SmokeTest_EaseMyTrip.loginCheckTestEMT(SmokeTest_EaseMyTrip.java:22)
+

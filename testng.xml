@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Functional Test Suite">
+<!-- <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd"> -->
 
-  <test thread-count="1" name="Smoke Test">
-    <classes>
-      <class name="testCase.KayakSmokeTest"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="1" name="Functional Test">
-    <classes>
-      <class name="testCase.KayakTestingDataDriven"/>
-      <class name="testCase.TestNGAnnotationDemo"/>
-    </classes>
-  </test> <!-- Test -->
-  
-</suite> <!-- Suite -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- <suite name="Smoke and Functional Test Suite" verbose="1" parallel = "tests" thread-count = "5"> -->
+	<suite name="Smoke and Functional Test Suite" verbose="1">
+	
+	<listeners>
+		<listener class-name="listeners.AnnotationTransformer"></listener>
+		<!-- <listener class-name="listeners.ListenersTestNGDefault"> </listener> -->
+		<!-- <listener class-name="listeners.ListenersTestNGInvokeMethod"> </listener> -->
+	</listeners>
+
+
+	<!-- <test name="Parallel Tests" parallel="methods">
+		<classes>
+			<class name="base.BaseTestParallel" />
+		</classes>
+	</test> -->
+
+
+	<test name="Smoke Test" parallel = "classes" thread-count = "5" >
+
+		<!-- <groups> 
+			<run> 
+				<include name="Dom" /> 
+				<include name="Int" /> 
+			</run> 
+		</groups> -->
+
+		<classes>
+			<class name="smokeTests.SmokeTest_EaseMyTrip" />
+			<class name="smokeTests.SmokeTest_Kayak" /> 
+			<class name="smokeTests.SmokeTest_MMT" />
+			<class name="smokeTests.SmokeTest_Trivago" />
+		</classes>
+
+	</test>
+
+	<test name="Functional Test">
+		<classes>
+			<class name="testCase.KayakTestingDataDriven" />
+			<class name="testCase.AnnotationDemo_TestNG" />
+		</classes>
+
+	</test>
+
+</suite>

@@ -22,7 +22,6 @@ public class BaseTest {
 	public static Properties prop = new Properties ();
 	
 	@BeforeMethod
-//	@BeforeTest
 	public void setUp() throws IOException {
 		
 		if(driver==null) {
@@ -31,22 +30,23 @@ public class BaseTest {
 		}
 		
 		if(prop.getProperty("browser").equalsIgnoreCase("chrome")) {
-			ChromeOptions options = new ChromeOptions();
-			driver = new ChromeDriver(options);
+//			ChromeOptions options = new ChromeOptions();
+//			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 			Wait  = new WebDriverWait (driver, Duration.ofSeconds(20));
 
 		}
 		
 		else if(prop.getProperty("browser").equalsIgnoreCase("firefox")) {
-			FirefoxOptions options = new FirefoxOptions();
-			driver = new FirefoxDriver(options);
+//			FirefoxOptions options = new FirefoxOptions();
+//			driver = new FirefoxDriver(options);
+			driver = new FirefoxDriver();
 			Wait  = new WebDriverWait (driver, Duration.ofSeconds(20));
 			
 		}
 	}
 	
 	@AfterMethod
-//	@AfterTest
 	public void tearDown() {
 		driver.close();
 	}

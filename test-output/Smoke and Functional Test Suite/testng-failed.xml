@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke and Functional Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Smoke Test(failed)">
+    <groups>
+      <run>
+        <include name="Dom"/>
+        <include name="Int"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="smokeTests.SmokeTest_MMT">
+        <methods>
+          <include name="loginCheckTestMMT"/>
+        </methods>
+      </class> <!-- smokeTests.SmokeTest_MMT -->
+      <class name="smokeTests.SmokeTest_Kayak">
+        <methods>
+          <include name="loginCheckTestKayak"/>
+        </methods>
+      </class> <!-- smokeTests.SmokeTest_Kayak -->
+      <class name="smokeTests.SmokeTest_EaseMyTrip">
+        <methods>
+          <include name="loginCheckTestEMT"/>
+        </methods>
+      </class> <!-- smokeTests.SmokeTest_EaseMyTrip -->
+      <class name="smokeTests.SmokeTest_Trivago">
+        <methods>
+          <include name="loginCheckTestTrivago"/>
+        </methods>
+      </class> <!-- smokeTests.SmokeTest_Trivago -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Smoke and Functional Test Suite] -->
