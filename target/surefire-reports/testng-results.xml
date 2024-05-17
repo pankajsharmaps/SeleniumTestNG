@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="4" ignored="0" total="12" passed="7" failed="1" skipped="0">
+<testng-results retried="3" ignored="0" total="11" passed="7" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Trivago]]>
-    </line>
     <line>
       <![CDATA[EMT]]>
     </line>
     <line>
-      <![CDATA[KAYAK]]>
+      <![CDATA[Trivago]]>
     </line>
     <line>
       <![CDATA[MMT]]>
+    </line>
+    <line>
+      <![CDATA[KAYAK]]>
     </line>
     <line>
       <![CDATA[Page title is MakeMyTrip - #1 Travel Website 50% OFF on Hotels, Flights & Holiday]]>
@@ -20,90 +20,39 @@
       <![CDATA[Page title is Search Flights, Hotels & Rental Cars | KAYAK]]>
     </line>
     <line>
-      <![CDATA[Page title is Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com]]>
-    </line>
-    <line>
-      <![CDATA[Page title is Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com]]>
-    </line>
-    <line>
-      <![CDATA[EMT]]>
-    </line>
-    <line>
-      <![CDATA[EMT]]>
-    </line>
-    <line>
-      <![CDATA[EMT]]>
-    </line>
-    <line>
-      <![CDATA[Trivago]]>
+      <![CDATA[Page title is trivago.in - Compare hotel prices worldwide]]>
     </line>
     <line>
       <![CDATA[Page title is trivago.in - Compare hotel prices worldwide]]>
     </line>
+    <line>
+      <![CDATA[EMT]]>
+    </line>
+    <line>
+      <![CDATA[EMT]]>
+    </line>
+    <line>
+      <![CDATA[EMT]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-05-17T12:29:43 IST" name="Smoke and Functional Test Suite" finished-at="2024-05-17T12:31:29 IST" duration-ms="105680">
+  <suite started-at="2024-05-17T12:48:44 IST" name="Smoke and Functional Test Suite" finished-at="2024-05-17T12:50:25 IST" duration-ms="101688">
     <groups>
       <group name="Dom">
-        <method signature="SmokeTest_EaseMyTrip.loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" name="loginCheckTestEMT" class="smokeTests.SmokeTest_EaseMyTrip"/>
-        <method signature="SmokeTest_MMT.loginCheckTestMMT()[pri:0, instance:smokeTests.SmokeTest_MMT@70b0b186]" name="loginCheckTestMMT" class="smokeTests.SmokeTest_MMT"/>
+        <method signature="SmokeTest_EaseMyTrip.loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" name="loginCheckTestEMT" class="smokeTests.SmokeTest_EaseMyTrip"/>
+        <method signature="SmokeTest_MMT.loginCheckTestMMT()[pri:0, instance:smokeTests.SmokeTest_MMT@6b0c2d26]" name="loginCheckTestMMT" class="smokeTests.SmokeTest_MMT"/>
       </group> <!-- Dom -->
       <group name="Int">
-        <method signature="SmokeTest_Kayak.loginCheckTestKayak()[pri:0, instance:smokeTests.SmokeTest_Kayak@7bc1a03d]" name="loginCheckTestKayak" class="smokeTests.SmokeTest_Kayak"/>
-        <method signature="SmokeTest_Trivago.loginCheckTestTrivago()[pri:0, instance:smokeTests.SmokeTest_Trivago@ba8d91c]" name="loginCheckTestTrivago" class="smokeTests.SmokeTest_Trivago"/>
+        <method signature="SmokeTest_Kayak.loginCheckTestKayak()[pri:0, instance:smokeTests.SmokeTest_Kayak@1c72da34]" name="loginCheckTestKayak" class="smokeTests.SmokeTest_Kayak"/>
+        <method signature="SmokeTest_Trivago.loginCheckTestTrivago()[pri:0, instance:smokeTests.SmokeTest_Trivago@3d3fcdb0]" name="loginCheckTestTrivago" class="smokeTests.SmokeTest_Trivago"/>
       </group> <!-- Int -->
     </groups>
-    <test started-at="2024-05-17T12:29:43 IST" name="Smoke Test" finished-at="2024-05-17T12:30:54 IST" duration-ms="71275">
+    <test started-at="2024-05-17T12:48:44 IST" name="Smoke Test" finished-at="2024-05-17T12:49:50 IST" duration-ms="66514">
       <class name="smokeTests.SmokeTest_Trivago">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_Trivago@ba8d91c]" started-at="2024-05-17T12:29:43 IST" name="setUp" finished-at="2024-05-17T12:30:11 IST" duration-ms="28369" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_Trivago@3d3fcdb0]" started-at="2024-05-17T12:48:44 IST" name="setUp" finished-at="2024-05-17T12:49:02 IST" duration-ms="18392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="loginCheckTestTrivago()[pri:0, instance:smokeTests.SmokeTest_Trivago@ba8d91c]" started-at="2024-05-17T12:30:11 IST" name="loginCheckTestTrivago" finished-at="2024-05-17T12:30:42 IST" duration-ms="30787" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Title asertion check expected [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com] but found [trivago.in - Compare hotel prices worldwide]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title asertion check expected [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com] but found [trivago.in - Compare hotel prices worldwide]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at smokeTests.SmokeTest_Trivago.loginCheckTestTrivago(SmokeTest_Trivago.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Trivago]]>
-            </line>
-            <line>
-              <![CDATA[Page title is Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginCheckTestTrivago -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_Trivago@ba8d91c]" started-at="2024-05-17T12:30:42 IST" name="tearDown" finished-at="2024-05-17T12:30:43 IST" duration-ms="397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_Trivago@ba8d91c]" started-at="2024-05-17T12:30:43 IST" name="setUp" finished-at="2024-05-17T12:30:50 IST" duration-ms="7161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginCheckTestTrivago()[pri:0, instance:smokeTests.SmokeTest_Trivago@ba8d91c]" started-at="2024-05-17T12:30:50 IST" name="loginCheckTestTrivago" finished-at="2024-05-17T12:30:53 IST" duration-ms="3654" status="PASS">
+        <test-method signature="loginCheckTestTrivago()[pri:0, instance:smokeTests.SmokeTest_Trivago@3d3fcdb0]" started-at="2024-05-17T12:49:02 IST" name="loginCheckTestTrivago" finished-at="2024-05-17T12:49:50 IST" duration-ms="47540" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trivago]]>
@@ -113,13 +62,13 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
             </line>
           </reporter-output>
         </test-method> <!-- loginCheckTestTrivago -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_Trivago@ba8d91c]" started-at="2024-05-17T12:30:53 IST" name="tearDown" finished-at="2024-05-17T12:30:54 IST" duration-ms="859" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_Trivago@3d3fcdb0]" started-at="2024-05-17T12:49:50 IST" name="tearDown" finished-at="2024-05-17T12:49:50 IST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- smokeTests.SmokeTest_Trivago -->
       <class name="smokeTests.SmokeTest_MMT">
-        <test-method signature="loginCheckTestMMT()[pri:0, instance:smokeTests.SmokeTest_MMT@70b0b186]" started-at="2024-05-17T12:29:43 IST" name="loginCheckTestMMT" finished-at="2024-05-17T12:30:36 IST" duration-ms="52675" status="PASS">
+        <test-method signature="loginCheckTestMMT()[pri:0, instance:smokeTests.SmokeTest_MMT@6b0c2d26]" started-at="2024-05-17T12:48:44 IST" name="loginCheckTestMMT" finished-at="2024-05-17T12:49:32 IST" duration-ms="48052" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[MMT]]>
@@ -131,7 +80,7 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
         </test-method> <!-- loginCheckTestMMT -->
       </class> <!-- smokeTests.SmokeTest_MMT -->
       <class name="smokeTests.SmokeTest_Kayak">
-        <test-method signature="loginCheckTestKayak()[pri:0, instance:smokeTests.SmokeTest_Kayak@7bc1a03d]" started-at="2024-05-17T12:29:43 IST" name="loginCheckTestKayak" finished-at="2024-05-17T12:30:37 IST" duration-ms="53577" status="PASS">
+        <test-method signature="loginCheckTestKayak()[pri:0, instance:smokeTests.SmokeTest_Kayak@1c72da34]" started-at="2024-05-17T12:48:44 IST" name="loginCheckTestKayak" finished-at="2024-05-17T12:49:33 IST" duration-ms="49018" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[KAYAK]]>
@@ -143,17 +92,17 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
         </test-method> <!-- loginCheckTestKayak -->
       </class> <!-- smokeTests.SmokeTest_Kayak -->
       <class name="smokeTests.SmokeTest_EaseMyTrip">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:29:43 IST" name="setUp" finished-at="2024-05-17T12:30:11 IST" duration-ms="28463" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:48:44 IST" name="setUp" finished-at="2024-05-17T12:49:02 IST" duration-ms="18401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:11 IST" name="loginCheckTestEMT" finished-at="2024-05-17T12:30:42 IST" duration-ms="30695" status="SKIP">
+        <test-method retried="true" signature="loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:02 IST" name="loginCheckTestEMT" finished-at="2024-05-17T12:49:50 IST" duration-ms="47555" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Title asertion check expected [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com] but found [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com***]]]>
+              <![CDATA[Title asertion check expected [trivago.in - Compare hotel prices worldwide] but found [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com***]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Title asertion check expected [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com] but found [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com***]
+              <![CDATA[java.lang.AssertionError: Title asertion check expected [trivago.in - Compare hotel prices worldwide] but found [Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com***]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
@@ -180,29 +129,29 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
               <![CDATA[EMT]]>
             </line>
             <line>
-              <![CDATA[Page title is Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com]]>
+              <![CDATA[Page title is trivago.in - Compare hotel prices worldwide]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginCheckTestEMT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:42 IST" name="tearDown" finished-at="2024-05-17T12:30:43 IST" duration-ms="626" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="tearDown" finished-at="2024-05-17T12:49:50 IST" duration-ms="433" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17c1c19cca4af90f70b23ce7848503f8, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17c1c19cca4af90f70b23ce7848503f8]]>
+Command: [6514b85165e0e081efe23cb36b877599, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6514b85165e0e081efe23cb36b877599]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17c1c19cca4af90f70b23ce7848503f8, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17c1c19cca4af90f70b23ce7848503f8
+Command: [6514b85165e0e081efe23cb36b877599, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6514b85165e0e081efe23cb36b877599
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -241,29 +190,29 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:43 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715929243293" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715930390681" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:43 IST" name="loginCheckTestEMT" finished-at="2024-05-17T12:30:43 IST" duration-ms="17" status="SKIP">
+        <test-method retried="true" signature="loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="loginCheckTestEMT" finished-at="2024-05-17T12:49:50 IST" duration-ms="13" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17c1c19cca4af90f70b23ce7848503f8, get {url=https://www.easemytrip.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17c1c19cca4af90f70b23ce7848503f8]]>
+Command: [6514b85165e0e081efe23cb36b877599, get {url=https://www.easemytrip.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6514b85165e0e081efe23cb36b877599]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17c1c19cca4af90f70b23ce7848503f8, get {url=https://www.easemytrip.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17c1c19cca4af90f70b23ce7848503f8
+Command: [6514b85165e0e081efe23cb36b877599, get {url=https://www.easemytrip.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6514b85165e0e081efe23cb36b877599
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -298,33 +247,29 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
             </line>
           </reporter-output>
         </test-method> <!-- loginCheckTestEMT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:43 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715929243312" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715930390697" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:43 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715929243313" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method retried="true" signature="loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:43 IST" name="loginCheckTestEMT" finished-at="2024-05-17T12:30:43 IST" duration-ms="22" status="SKIP">
+        <test-method retried="true" signature="loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="loginCheckTestEMT" finished-at="2024-05-17T12:49:50 IST" duration-ms="5" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17c1c19cca4af90f70b23ce7848503f8, get {url=https://www.easemytrip.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17c1c19cca4af90f70b23ce7848503f8]]>
+Command: [6514b85165e0e081efe23cb36b877599, get {url=https://www.easemytrip.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6514b85165e0e081efe23cb36b877599]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17c1c19cca4af90f70b23ce7848503f8, get {url=https://www.easemytrip.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17c1c19cca4af90f70b23ce7848503f8
+Command: [6514b85165e0e081efe23cb36b877599, get {url=https://www.easemytrip.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6514b85165e0e081efe23cb36b877599
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -359,33 +304,37 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
             </line>
           </reporter-output>
         </test-method> <!-- loginCheckTestEMT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:43 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715929243337" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715930390698" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715930390704" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:43 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715929243338" status="SKIP">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715930390705" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:43 IST" name="loginCheckTestEMT" finished-at="2024-05-17T12:30:43 IST" duration-ms="30" status="FAIL">
+        <test-method signature="loginCheckTestEMT()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="loginCheckTestEMT" finished-at="2024-05-17T12:49:50 IST" duration-ms="10" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17c1c19cca4af90f70b23ce7848503f8, get {url=https://www.easemytrip.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17c1c19cca4af90f70b23ce7848503f8]]>
+Command: [6514b85165e0e081efe23cb36b877599, get {url=https://www.easemytrip.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6514b85165e0e081efe23cb36b877599]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6.5', java.version: '22.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [17c1c19cca4af90f70b23ce7848503f8, get {url=https://www.easemytrip.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59341}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 17c1c19cca4af90f70b23ce7848503f8
+Command: [6514b85165e0e081efe23cb36b877599, get {url=https://www.easemytrip.com}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.209, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/tv/ys9fvp5575v...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60597}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60597/devtoo..., se:cdpVersion: 124.0.6367.209, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6514b85165e0e081efe23cb36b877599
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -420,19 +369,19 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
             </line>
           </reporter-output>
         </test-method> <!-- loginCheckTestEMT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@6b1274d2]" started-at="2024-05-17T12:30:43 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715929243372" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smokeTests.SmokeTest_EaseMyTrip@49e202ad]" started-at="2024-05-17T12:49:50 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1715930390717" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- smokeTests.SmokeTest_EaseMyTrip -->
     </test> <!-- Smoke Test -->
-    <test started-at="2024-05-17T12:30:55 IST" name="Functional Test" finished-at="2024-05-17T12:31:29 IST" duration-ms="33977">
+    <test started-at="2024-05-17T12:49:51 IST" name="Functional Test" finished-at="2024-05-17T12:50:25 IST" duration-ms="34785">
       <class name="testCase.KayakTestingDataDriven">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@8b96fde]" started-at="2024-05-17T12:30:56 IST" name="setUp" finished-at="2024-05-17T12:31:01 IST" duration-ms="4421" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@491666ad]" started-at="2024-05-17T12:49:53 IST" name="setUp" finished-at="2024-05-17T12:49:59 IST" duration-ms="6094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="kayakTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@8b96fde]" started-at="2024-05-17T12:31:01 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-05-17T12:31:08 IST" duration-ms="6688" status="PASS">
+        <test-method signature="kayakTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@491666ad]" started-at="2024-05-17T12:49:59 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-05-17T12:50:05 IST" duration-ms="6482" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -453,15 +402,15 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- kayakTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@8b96fde]" started-at="2024-05-17T12:31:08 IST" name="tearDown" finished-at="2024-05-17T12:31:08 IST" duration-ms="428" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@491666ad]" started-at="2024-05-17T12:50:05 IST" name="tearDown" finished-at="2024-05-17T12:50:06 IST" duration-ms="336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@8b96fde]" started-at="2024-05-17T12:31:08 IST" name="setUp" finished-at="2024-05-17T12:31:12 IST" duration-ms="4086" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@491666ad]" started-at="2024-05-17T12:50:06 IST" name="setUp" finished-at="2024-05-17T12:50:10 IST" duration-ms="4062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="kayakTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@8b96fde]" started-at="2024-05-17T12:31:12 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-05-17T12:31:18 IST" duration-ms="6081" status="PASS">
+        <test-method signature="kayakTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@491666ad]" started-at="2024-05-17T12:50:10 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-05-17T12:50:16 IST" duration-ms="6153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -482,15 +431,15 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- kayakTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@8b96fde]" started-at="2024-05-17T12:31:18 IST" name="tearDown" finished-at="2024-05-17T12:31:19 IST" duration-ms="402" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@491666ad]" started-at="2024-05-17T12:50:16 IST" name="tearDown" finished-at="2024-05-17T12:50:16 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@8b96fde]" started-at="2024-05-17T12:31:19 IST" name="setUp" finished-at="2024-05-17T12:31:22 IST" duration-ms="3849" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCase.KayakTestingDataDriven@491666ad]" started-at="2024-05-17T12:50:16 IST" name="setUp" finished-at="2024-05-17T12:50:19 IST" duration-ms="3136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="kayakTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@8b96fde]" started-at="2024-05-17T12:31:22 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-05-17T12:31:28 IST" duration-ms="5758" status="PASS">
+        <test-method signature="kayakTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testCase.KayakTestingDataDriven@491666ad]" started-at="2024-05-17T12:50:19 IST" name="kayakTest" data-provider="fnTestData" finished-at="2024-05-17T12:50:25 IST" duration-ms="5902" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -511,45 +460,45 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- kayakTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@8b96fde]" started-at="2024-05-17T12:31:28 IST" name="tearDown" finished-at="2024-05-17T12:31:29 IST" duration-ms="475" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCase.KayakTestingDataDriven@491666ad]" started-at="2024-05-17T12:50:25 IST" name="tearDown" finished-at="2024-05-17T12:50:25 IST" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCase.KayakTestingDataDriven -->
       <class name="testCase.AnnotationDemo_TestNG">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCase.AnnotationDemo_TestNG@15bb6bea]" started-at="2024-05-17T12:29:43 IST" name="beforeSuite" finished-at="2024-05-17T12:29:43 IST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testCase.AnnotationDemo_TestNG@3b2c72c2]" started-at="2024-05-17T12:48:44 IST" name="beforeSuite" finished-at="2024-05-17T12:48:44 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testCase.AnnotationDemo_TestNG@15bb6bea]" started-at="2024-05-17T12:30:55 IST" name="beforeTest" finished-at="2024-05-17T12:30:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testCase.AnnotationDemo_TestNG@3b2c72c2]" started-at="2024-05-17T12:49:51 IST" name="beforeTest" finished-at="2024-05-17T12:49:51 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCase.AnnotationDemo_TestNG@15bb6bea]" started-at="2024-05-17T12:31:29 IST" name="beforeClass" finished-at="2024-05-17T12:31:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCase.AnnotationDemo_TestNG@3b2c72c2]" started-at="2024-05-17T12:50:25 IST" name="beforeClass" finished-at="2024-05-17T12:50:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCase.AnnotationDemo_TestNG@15bb6bea]" started-at="2024-05-17T12:31:29 IST" name="beforeMethod" finished-at="2024-05-17T12:31:29 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCase.AnnotationDemo_TestNG@3b2c72c2]" started-at="2024-05-17T12:50:25 IST" name="beforeMethod" finished-at="2024-05-17T12:50:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="testCase1()[pri:0, instance:testCase.AnnotationDemo_TestNG@15bb6bea]" started-at="2024-05-17T12:31:29 IST" name="testCase1" finished-at="2024-05-17T12:31:29 IST" duration-ms="0" status="PASS">
+        <test-method signature="testCase1()[pri:0, instance:testCase.AnnotationDemo_TestNG@3b2c72c2]" started-at="2024-05-17T12:50:25 IST" name="testCase1" finished-at="2024-05-17T12:50:25 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCase.AnnotationDemo_TestNG@15bb6bea]" started-at="2024-05-17T12:31:29 IST" name="afterMethod" finished-at="2024-05-17T12:31:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCase.AnnotationDemo_TestNG@3b2c72c2]" started-at="2024-05-17T12:50:25 IST" name="afterMethod" finished-at="2024-05-17T12:50:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCase.AnnotationDemo_TestNG@15bb6bea]" started-at="2024-05-17T12:31:29 IST" name="afterClass" finished-at="2024-05-17T12:31:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCase.AnnotationDemo_TestNG@3b2c72c2]" started-at="2024-05-17T12:50:25 IST" name="afterClass" finished-at="2024-05-17T12:50:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testCase.AnnotationDemo_TestNG@15bb6bea]" started-at="2024-05-17T12:31:29 IST" name="afterTest" finished-at="2024-05-17T12:31:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testCase.AnnotationDemo_TestNG@3b2c72c2]" started-at="2024-05-17T12:50:25 IST" name="afterTest" finished-at="2024-05-17T12:50:25 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCase.AnnotationDemo_TestNG@15bb6bea]" started-at="2024-05-17T12:31:29 IST" name="afterSuite" finished-at="2024-05-17T12:31:29 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCase.AnnotationDemo_TestNG@3b2c72c2]" started-at="2024-05-17T12:50:25 IST" name="afterSuite" finished-at="2024-05-17T12:50:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
