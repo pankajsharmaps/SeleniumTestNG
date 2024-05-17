@@ -17,7 +17,7 @@ public class SmokeTest_EaseMyTrip extends BaseTest {
 		System.out.println("EMT - smoke");
 		Reporter.log("EMT");
 			
-		String expectedTitle = "Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com***";
+		String expectedTitle = "Book Flights, Hotels, Holidays, Bus & Train Tickets - EaseMyTrip.com";
 	
 		driver.get("https://www.easemytrip.com");
 		String actualTitle;

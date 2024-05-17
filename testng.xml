@@ -20,8 +20,8 @@
 	</test> -->
 
 
-	<test name="Smoke Test" parallel = "classes" thread-count = "5" >
-
+	<!-- <test name="Smoke Test" parallel = "classes" thread-count = "5" > -->
+	<test name="Smoke Test">
 		<!-- <groups> 
 			<run> 
 				<include name="Dom" /> 
