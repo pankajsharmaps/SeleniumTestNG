@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building the application...'
                 // Example build command
-                 sh 'mvn clean compile'
+                 sh 'mvn clean'
             }
         }
 
@@ -44,5 +44,6 @@ pipeline {
         }
     }
 }
+
 
 
