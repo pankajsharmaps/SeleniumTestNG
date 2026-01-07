@@ -18,15 +18,5 @@ pipeline {
         }
     }
 
-    post {
-        // This 'always' block ensures the results are published regardless of test outcomes
-        always {
-            // Publish TestNG test results
-            // The pattern '**/target/testng-results.xml' is common for Maven projects
-            // testng title: 'TestNG Results', reportFilenamePattern: '**/target/testng-results.xml'
-            // If using JUnit reports for some reason:
-            // junit '**/target/surefire-reports/*.xml' 
-        }
-    }
+    
 }
-
