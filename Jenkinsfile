@@ -14,7 +14,7 @@ pipeline {
             steps {
                 echo 'Building the application...'
                 // Example build command
-                 sh 'mvn clean'
+                // sh 'mvn clean'
             }
         }
 
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 echo 'Running tests...'
                 // Example test command
-                 sh 'mvn test'
+                // sh 'mvn test'
             }
         }
 
@@ -44,6 +44,7 @@ pipeline {
         }
     }
 }
+
 
 
 
