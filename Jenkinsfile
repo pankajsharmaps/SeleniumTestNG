@@ -14,6 +14,8 @@ pipeline {
             steps {
                 echo 'Building the application...'
                 // Example build command
+                set MAVEN_HOME=C:\Users\admin\scoop\apps\maven\3.9.12
+                set path=C:\Users\admin\scoop\apps\maven\3.9.12\bin:%path%
                 bat 'mvn clean'
             }
         }
@@ -44,6 +46,7 @@ pipeline {
         }
     }
 }
+
 
 
 
