@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Smoke and Functional Test Suite" verbose="1"
+	parallel="tests" thread-count="5">
+	<!-- <suite name="Smoke and Functional Test Suite" verbose="1"> -->
+
+	<listeners>
+		<!-- <listener class-name="listeners.AnnotationTransformer"></listener> -->
+		<!-- <listener class-name="listeners.ListenersTestNGDefault"> </listener> -->
+		<!-- <listener class-name="listeners.ListenersTestNGInvokeMethod"> </listener> -->
+	</listeners>
+
+
+	<!-- <test name="Parallel Tests" parallel="methods">
+		<classes>
+			<class name="base.BaseTestParallel" />
+		</classes>
+	</test> -->
+	
+	<test name="Parallel Tests">
+		<classes>
+			<class name="base.BaseTestParallel" />
+		</classes>
+	</test>
+
+</suite>
